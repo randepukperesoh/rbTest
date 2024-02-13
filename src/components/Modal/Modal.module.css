@@ -1,0 +1,82 @@
+.modalWrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #45927FE5;
+}
+.modal{
+    background-color: #F8FBFA;
+    width: 1140px;
+    height: 350px;
+    margin: 350px auto 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.titleModal{
+    width: 354px;
+    height: 94px;
+    font-family: PT Sans Caption;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.descritionBlock{
+    margin: 96px 0 0 0;
+}
+.descritionModal{
+    width: 354px;
+    height: 48px;
+    font-family: PT Sans Caption;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.sendBtn{
+    display: block;
+    width: 196px;
+    height: 43px;
+    color: #FFFFFF;
+    background-color: #0DBC91;
+    border-radius: 50px;
+    margin: 32px auto 0;
+}
+.form{
+    margin: 60px 0 0 0;
+    width: 452px;
+    display: block;
+}
+.inputText{
+    width: 452px;
+    height: 41px;
+    border: 1px solid #E1E1E1;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.inputText:nth-child(n+1) {
+margin: 16px 0 0 0;
+}
+.closeBtn{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    border-top: 2px solid #F8FBFA;
+    transform: rotate(45deg);
+}
+.closeBtn::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    border-top: 2px solid #F8FBFA;
+    transform: rotate(270deg);
+}

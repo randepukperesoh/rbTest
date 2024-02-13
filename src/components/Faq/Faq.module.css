@@ -1,0 +1,14 @@
+.Faq{
+    width: 340px;
+    margin: 30px auto 0;
+}
+.titleFaq{
+    font-family: PT Sans Caption;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #364844;
+    margin: 0 auto 31px;
+}

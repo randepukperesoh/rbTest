@@ -4,7 +4,7 @@ import { Layout } from './components/Layout/Layot';
 import { Description } from './components/Description/Description';
 import { Slider } from './components/Slider/Slider';
 import { Faq } from './components/Faq/Faq'
-
+import { Modal } from './components/Modal/Modal'
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Slider/>
       </main>
     </Layout>
+    //<Modal/>
   );
 }
 
