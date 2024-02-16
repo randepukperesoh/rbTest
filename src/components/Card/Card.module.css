@@ -1,0 +1,172 @@
+.sliderItem{
+    height: 536px;
+    width: 340px;
+    color: #364844;
+    margin: 0 auto;
+}
+.sliderItemDescription{
+    background-color: #E2F0EF;
+    padding-top: 22px;
+    height: 367px;
+    margin: -4px 0 0 0;
+}
+.imgCard{
+    width: 340px;
+    height: 169px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.headingCard{
+    margin: 0 0 0 23px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33.6px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.price{
+    margin: 17px 0 0 23px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.price span {
+    color: #868686;
+    text-decoration: line-through;
+}
+.ItemBtnBlock{
+    margin: 27px 0 0 23px;
+}
+.signUp{
+    width: 137px;
+    height: 43px;
+    border-radius: 50px;
+    background: #0DBC91;
+    color: #FFFFFF; 
+    border: none;
+    margin: 0 6px 0 0;
+    cursor: pointer;
+}
+.signUp:hover{
+    background-color: #00D29F;
+}
+.more{
+    width: 137px;
+    height: 43px;
+    border-radius: 50px;
+    border: 1px solid #0DBC91;
+    color: #0DBC91;
+    cursor: pointer;
+}
+.more:hover{
+    background-color: #0DBC91;
+    color: #FFFFFF;
+}
+.cardList{
+    color: black;
+    padding: 0;
+    margin: 12px 0 0 43px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.cardList li::marker {
+    color: #1FA181;
+    font-size: 20px;
+}
+.cardList li {
+    list-style: inside ;
+}
+@media screen and (width > 1200px) {
+    .sliderItem{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        width: 1140px;
+        height: 440px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 13px;
+        overflow: hidden;
+    }
+    .imgCard{
+        width: 692px;
+        height: 436px;
+        margin-right: 0px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .sliderItemDescription{
+        padding: 53px 0 0 63px;
+        position: relative;
+        height: 440px;
+        width: 613px;
+        z-index: 2;
+        box-sizing: border-box;
+    }
+    .sliderItemDescription::after{
+        content: "";
+        width: 300px;
+        height: 440px;
+        position: absolute;
+        bottom: 0;
+        left: 313px;
+        transform: skewX(15deg);
+        background-color: #E2F0EF;
+        z-index: -1;
+    }
+    .headingCard{
+        font-family: PT Sans Caption;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .headingCard span{
+        font-family: PT Sans Caption;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .cardList{
+        font-family: PT Sans Caption;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .price{
+        font-family: PT Sans Caption;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;           
+    }
+    .price span{
+        font-family: PT Sans Caption;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .signUp{
+        width: 196px;
+        height: 43px;
+    }
+    .more{
+        width: 196px;
+        height: 43px;
+        border-radius: 50px;
+    }
+}

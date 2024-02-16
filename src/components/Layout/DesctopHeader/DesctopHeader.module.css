@@ -1,0 +1,74 @@
+.firstRow{
+    display: flex;
+    justify-content: space-around;
+    height: 67px;
+}
+.logoMenu{
+    display: flex;
+    align-items: center;
+}
+.numberBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 380px;
+}
+.modalBtn{
+    width: 196px;
+    height: 43px;
+    border-radius: 50px;
+    background: #0DBC91;
+    font-family: PT Sans Caption;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 11px 23px;
+    box-sizing: border-box;
+    
+}
+.secondRow{
+    background-color: #1FA181;
+    height: 43px;
+    display: flex;
+}
+.Menu{
+    min-width: 1120px;
+    margin: 0 auto;
+}
+.Menu ul{
+    color: #FFFFFF;
+    display: flex;
+    font-family: PT Sans Caption;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.Menu ul li{
+    margin: 10px 30px 0 0;
+}
+.location{
+    margin: 0 0 0 20px;
+    color: #364844;
+    font-family: PT Sans Caption;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.location span {
+    font-family: PT Sans Caption;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 0 25px;
+    color: #868686;
+
+}

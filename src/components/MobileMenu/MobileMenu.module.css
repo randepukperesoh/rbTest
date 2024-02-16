@@ -1,0 +1,42 @@
+.menuWrapper{
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+.menu{
+    min-width: 375px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #45927FE5;
+    opacity: 0.95;
+    padding: 48px 0 0 19px;
+    box-sizing: border-box;
+}
+ul{
+    color: #FFFFFF;
+}
+li{
+    margin: 10px 0 0 0;
+    
+}
+li:hover{
+    cursor: pointer;
+}
+.modalBtn{
+    width: 196px;
+    height: 43px;
+    border-radius: 50px;
+    color: #1FA181;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 39px 0 0 0;
+    background: #F6F6F6;
+    opacity: 1;
+}

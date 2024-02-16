@@ -1,26 +1,30 @@
+import { useState } from 'react'
 import styles from './Layout.module.css'
+import { MobileMenu } from '../MobileMenu/MobileMenu'
+import { useModal } from '../ModalProvider/ModalProvider'
+import { Modal } from '../Modal/Modal'
+import { DesctopHeader } from './DesctopHeader/DesctopHeader'
+import { MobileHeader } from './MobileHeader/MobileHeader'
+import useWindowSize from '../hooks'
 
 export const Layout = ({children}) => {
+    const [menuActive, setMenuActive] = useState(false)
+    const { modal } = useModal();
+    const width = useWindowSize().width;
 
     return(
         <>
-            <header className={styles.header}>
-                <div className="mobileHeader">
-                <div className="menuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <img src="./assets/img/logo.png"/>
-                <div className="number"> <span>+7(863) 000 00 00</span>
-                    Ростов-на-Дону</div>
-            </div>
-            </header>
-            {children}
+            {width > 1200 ? <DesctopHeader/> : <MobileHeader menuActive={menuActive} setMenuActive={setMenuActive}/>}
+            <main>
+                {menuActive ? <MobileMenu closeMenu={setMenuActive}/> : null}
+                {modal && <Modal/>}
+                {children}
+            </main>
             <footer>
-                <div className="logoMenu">
-                    <img src="./assets/img/white logo.png"/>
-                    <ul>
+            {width > 1200 ? <img className={styles.logoWhite} width={91} height={27} src={require('./LOGO (1).png')} alt='Логотоип'/> : null}
+                <div className={styles.logoMenu}>
+                {width > 1200 ? null : <img className={styles.logoWhite} width={91} height={27} src={require('./LOGO (1).png')}alt='Логотоип'/>}
+                    <ul className={styles.list}>
                         <li>О клинике</li>
                         <li>Услуги</li>
                         <li>Специалисты</li>
@@ -28,10 +32,10 @@ export const Layout = ({children}) => {
                         <li>Контакты</li>
                     </ul> 
                 </div>
-                    <div className="socialBlock">
-                    <img src="./assets/img/instagram 4 1.png"/>
-                    <img src="./assets/img/whatsapp 1 1.png"/>
-                    <img src="./assets/img/telegram 1.png"/> 
+                <div className={styles.socialBlock}>
+                    <img width={24} src={require('./inst.png')} alt='Социальные сети'/>
+                    <img width={24} src={require('./telega.png')} alt='Социальные сети'/>
+                    <img width={24} src={require('./whatsapp.png')} alt='Социальные сети'/> 
                 </div>
             </footer>
         </>

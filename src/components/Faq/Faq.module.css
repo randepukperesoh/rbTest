@@ -3,6 +3,8 @@
     margin: 30px auto 0;
 }
 .titleFaq{
+    width: max-content;
+    margin: 0 auto;
     font-family: PT Sans Caption;
     font-size: 26px;
     font-weight: 700;
@@ -11,4 +13,17 @@
     text-align: left;
     color: #364844;
     margin: 0 auto 31px;
+    width: 340px;
+}
+.titleFaq p{
+    word-wrap: break-word;
+}
+@media screen and (width > 1200px) {
+    .Faq{
+        width: 1140px;
+        margin: 30px auto 0;
+    }
+    .titleFaq{
+        width: max-content;
+    }
 }

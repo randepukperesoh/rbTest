@@ -1,3 +1,8 @@
+.post{
+    background-color: #F8FBFA;
+    margin: 14px 0 0 0;
+    padding: 0 12px 12px;
+}
 .postTitle{
     font-family: PT Sans Caption;
     font-size: 18px;
@@ -7,13 +12,64 @@
     text-align: left;       
     color: #364844;   
 }
-.paragraph{
-    margin: 14px 0 0 0;
+.paragraphDesctop{
     font-family: PT Sans Caption;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
     color: #364844;
+}
+
+@media screen and (width > 1200px) {
+    .accordion{
+        width: 1140px;
+        padding: 40px 0 40px 40px ;
+        box-sizing: border-box;
+        background-color: #F8FBFA;
+        min-height: 108px;
+        margin: 24px 0 0 0;
+        position: relative;
+    }    
+    .accordion h3{
+        font-family: PT Sans Caption;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .paragraphDesctop{
+        margin: 14px 0 0 0;
+        font-family: PT Sans Caption;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .openBtn{
+        position: absolute;
+        top: 42px;
+        right: 42px;
+        width: 24px;
+        height: 24px;
+    }
+    .minus{
+        position: absolute;
+        top: 0px;
+        border: 2px solid #0DBC91;
+        width: 24px;
+        height: 0;
+        display: block;
+    }
+    .plus{
+        
+        border: 2px solid #0DBC91;
+        width: 24px;
+        height: 0;
+        display: block;
+        transform: rotate(90deg);
+    }
 }

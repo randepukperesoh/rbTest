@@ -1,0 +1,90 @@
+.mobileHeader{
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F6F6F6;
+}
+.logo{
+    color: #0DBC91;
+    font-weight: bold;
+    font-size: 18px;
+}
+.menuBtn{
+    width: 37px;
+    height: 26px;
+    position: relative;
+    z-index: 2;
+}
+.menuBtnActive{
+    width: 37px;
+    height: 26px;
+    position: relative;
+    z-index: 2;
+}
+.menuBtnActive span{
+    transform: translate(-50%, -50%);
+    background-color: #1FA181;
+}
+.menuBtnActive .span1{
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    transform: rotate(45deg);
+}
+.menuBtnActive .span2{
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    transform: rotate(45deg);
+}
+.menuBtnActive .span3{
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    transform: rotate(135deg);
+}
+.menuBtn span {
+    transform: translate(-50%, -50%);
+    background-color: #1FA181;
+}
+.span1{
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 5px;
+    right: -8px;
+}
+.span2{
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 12px;
+    right: -8px;
+}
+.span3{
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 19px;
+    right: -8px;
+}
+.number{
+    text-align: right;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+.phoneNumber{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
